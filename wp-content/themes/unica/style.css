@@ -1,0 +1,428 @@
+/*
+Theme Name: Unica
+Theme URI: http://themeforest.net/user/klbtheme/portfolio
+Author: KlbTheme(Omur OLGUNAY)
+Author URI: http://themeforest.net/user/KlbTheme
+Domain Path: /languages
+Description: This WordPress theme is best for use in such business areas as corporate, many types of agencies and bureaus, portfolio showcases, landscape, building, engineering, planning, construction, design
+Version: 1.5
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: right-sidebar, left-sidebar,  one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: unica
+
+Theme Developer:
+http://themeforest.net/user/KlbTheme
+https://www.facebook.com/omur.olgunay.1
+Skype:omurolgunay
+*/
+
+	/*- - - - - Contents - - - - -
+	
+	01 - General
+	02 - Portfolio
+	03 - Clients
+	04 - Contact Form
+	05 - Footer
+	- - - - - - - - - - - - - -*/
+
+/*General*/
+.vc_parallax:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 33, 44, 0.7);
+    z-index: 1;
+}
+.vc_row.wpb_row.vc_row-fluid{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.section .section-inner {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	padding-top: 0px;
+    background-size: cover;
+    background-color: #fff;
+}
+[class*="section-bottom"] .section-inner {
+    padding-bottom: 0px;
+}
+[class*="section-bottom"] + .section {
+    margin-top: 0px;
+}
+[class*="section-bg"] .section-inner, .section:last-child .section-inner {
+   padding-bottom: 0px; 
+}
+
+[class*="section-bottom"] + .section .section-inner {
+    padding-top: 0px; 
+}
+.klb-button{
+    position: relative;
+    z-index: 99;
+}
+
+.klb-post:before, .klb-post:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*Portfolio*/
+.works .works-item .works-item-link img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.gallery .gallery-item img {
+    height: 250px;
+}
+.mfp-wrap.unica .mfp-close:hover, .mfp-wrap.unica .mfp-arrow:hover {
+    background: none;
+}
+/*clients*/
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1466815561855.vc_row-has-fill{
+	 padding-left: 0px!important; 
+    padding-right: 0px!important; 
+}
+.owl-wrapper .owl-item .clients-item img{
+	padding: 0px 50px;
+}
+.intro{
+	padding:0;
+}
+
+/*contact form*/
+.wpcf7-form {
+    color: #fff;
+}
+.wpcf7-form p:nth-child(-n+3){
+	width:48%;
+	float:left;
+}
+@media only screen and (max-width : 1001px){
+	.wpcf7-form p:nth-child(-n+3){
+		width:100%;	
+	}
+}
+.wpcf7-form p:first-of-type{
+	margin-right:37px!important;	
+}
+
+
+.wpcf7-form-control-wrap:before, .wpcf7-form-control-wrap:after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  bottom: -18px;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0;
+  background: currentColor;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.wpcf7-form-control-wrap:after {
+  background: none;
+  box-shadow: 0 0 0 5px;
+  opacity: 0.3;
+}
+
+
+.wpcf7-form-control-wrap.your-message:before, .wpcf7-form-control-wrap.your-message:after{
+  content: '';
+  position: absolute;
+  left: -12px;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0;
+  background: currentColor;
+  border-radius: 50%;
+  transition: 0.3s;
+	
+}
+input[type="text"], input[type="password"], input[type="email"], textarea{
+	max-height:94px;
+}
+
+/* contact button*/
+.wpcf7-submit {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 18px 35px;
+  background: #FB544D;
+  border: none;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #000000;
+  font: italic bold 1em/1 Roboto Mono, serif;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+  background: #fa241b;
+}
+
+
+
+.wpcf7-submit {
+  background: none;
+  border: 4px double;
+  color: currentColor;
+}
+
+.wpcf7-submit:hover {
+  border-color: transparent !important;
+  color: #000000;
+}
+.wpcf7-form p:nth-child(6){
+	text-align:center;
+}
+
+/*intro*/
+#particles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+.klb-intro-logo{	
+	margin-bottom: 20px;
+}
+
+.intro .heading p {
+    font-weight: 600;
+}
+/*Owl Carousel Blog Gallery */
+.blog .owl-unica .owl-pagination,
+.post .owl-unica .owl-pagination{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+}
+
+.logo {
+    margin: 0;
+    padding: 40px 0 4px 30px;
+    font: 4.2857142857em/1.2 loveloline_bold;
+    font-size: 39px;
+}
+
+.logo a {
+	color:#fff;
+    text-decoration: none;
+}
+/*Tabs*/
+.vc_column-inner  .vc_tta-container .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab a{
+	background-color:transparent!important;
+	position:relative;
+	border:none;
+	color:#d56d71;
+    list-style: none;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 1;
+	display:block;
+}
+.vc_column-inner  .vc_tta-container .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab a i{
+	margin: 0 0 10px;
+	font-size:3em;
+	display:block;
+	margin-bottom: 34px;
+}
+span.vc_tta-title-text {
+	margin-left:0px!important;
+}
+.vc_tta.vc_tta-spacing-1 .vc_tta-tab {
+    margin: 1px 25px 0 1px !important;
+}
+
+
+.list-check li:before {
+    background: #d56d71;
+}
+p.vc_custom_heading {
+    opacity: 1;
+	}
+	
+/* Footer */
+
+#footer{
+    padding: 20px 40px;
+    color: #000;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+#footer ul.social{
+	text-align:right;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+#footer .social li{
+	text-align:center;
+    display: inline-block;
+    padding-bottom: 0;
+    line-height: 1;
+}
+
+#footer .social li a{
+	width:30px;
+	height:30px;
+}
+
+@media (max-width: 991px){
+#footer,
+#footer ul.social {
+    text-align:center;
+}
+
+#footer p{
+	margin-bottom:10px;
+}
+}
+
+iframe{
+	width:100%;
+}
+
+.blog-content ul.blog-socials span {
+    word-break: break-word;
+}
+
+.comment-navigation .nav-previous {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+#blog-post-comments .media-list  ul.children {
+    padding-left: 10px;
+}
+}
+
+a.no-logo {
+    position: absolute;
+    left: 41px;
+    top: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    z-index: 999;
+}
+/*Blog Latest*/
+
+#owl-blog .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#bar{
+  width: 0%;
+  max-width: 100%;
+  height: 4px;
+  background: #7fc242;
+}
+#progressBar{
+  width: 100%;
+  background: #EDEDED;
+}
+#owl-blog .owl-controls.clickable{
+    position: absolute;
+    bottom: 10px;
+}
+#owl-blog .owl-unica {
+    margin: 0; 
+}
+#owl-blog .blog-content a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    text-transform: capitalize;
+    position: relative;
+}
+#owl-blog .klb-post p{
+    padding: 0 30px;
+}
+.entry-media iframe{
+	border:none;
+}
+.mfp-content .owl-controls.clickable{
+	position:absolute;
+    bottom: 7px;
+}
+.proicon {
+    position: absolute;
+    top: 53px;
+    font-size: 30px;
+    left: 109px;
+	visibility:hidden;
+}
+li.works-item.shuffle-item.filtered:hover .proicon{
+	visibility:visible;
+      -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+	transition: transform 250ms ease-out, opacity 250ms ease-out;
+}
+#preloader {
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ background-color: #FFF;
+ z-index: 99999;
+}
+#preloader .pulse {
+ position: absolute;
+ display: inline-block;
+ top: 50%;
+ left: 50%;
+ width: 80px;
+ height: 80px;
+ margin-top: -40px;
+ margin-left: -40px;
+ border-radius: 40px;
+ background-color: #987F28;
+ -webkit-animation: scaleout 1.0s infinite ease;
+ animation: scaleout 1.0s infinite ease;
+}
+@-webkit-keyframes scaleout {
+ 0% { -webkit-transform: scale(0.0) }
+ 100% {
+  -webkit-transform: scale(1.0);
+  opacity: 0;
+ }
+}
+@keyframes scaleout {
+ 0% { 
+  transform: scale(0.0);
+  -webkit-transform: scale(0.0);
+ } 100% {
+  transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  opacity: 0;
+ }
+}
